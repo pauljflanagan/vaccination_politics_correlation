@@ -12,9 +12,8 @@ df['date'] = pd.to_datetime(df['date'])
 def extract_data(state, column):
     return df[df['location'] == state].drop( columns='location' ).set_index( 'date' )[column]
 
-extract_data('Alabama', 'people_vaccinated')
+data = extract_data('Alabama', 'people_vaccinated')
+print(data)
 
 def logistic_curve ( x, β0, β1, β2 ):
     return β0 / ( 1 + np.exp( β1*(-x+β2) ) )
-
-logistic_curve()
