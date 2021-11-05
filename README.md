@@ -1,9 +1,9 @@
-### Statistical Analysis of Vaccination Data
+# Statistical Analysis of Vaccination Data
 
 ## Vaccination data
 This project took in national U.S. vaccination data (sourced from https://github.com/owid/covid-19-data), which detailed the percent of each state's population that was fully vaccinated, as of 07/01/2021. This data was processed using the Pandas library to read in the CSV file.
 
-# Partial data analysis
+### Partial data analysis
 From this, a function was generated to take in a given metric and state, giving an output of a graph of that statistic's evolution over time.
 
 ## Correlation mapping
